@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group row">
+        <label for="dateInput" class="col-sm-2 col-form-label">Date Paid</label>
+        <div class="col-sm-3">
+          <input [(ngModel)]="date" name="date" type="date" class="form-control" id="dateInput" placeholder="2018-9-1">
+        </div>
+        <label for="amountInput" class="col-sm-2 col-form-label">Amount</label>
+        <div class="col-sm-3">
+          <input [(ngModel)]="amount" name="amount" type="number" class="form-control" id="amountInput" placeholder="40.05">
+        </div>
+        <div class="col-auto">
+          <a class="btn btn-primary" (click)=onAddTransaction()>Add</a>
+        </div>
+    </div>
+</form>
